@@ -1,0 +1,138 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+/* Container section */
+.container{
+	width: 100%;
+	height: 100vh;
+	background: lightblue;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*Inner section */
+.todo-app{
+	width: 600px;
+	background: white;
+	padding: 30px;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+}
+/* Todo title*/
+.app-title{
+	display: inline-flex;
+	align-items: center;
+}
+/*Input row */
+.row{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #edeef0;
+	border-radius: 30px;
+	margin-top: 20px;
+}
+input{
+	width: 100%;
+	padding: 10px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	font-size: 16px;
+	padding-left: 20px;
+}
+/*Add button */
+button{
+	padding: 15px 50px;
+	border-radius: 30px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: lightpink;
+	color: white;
+	font-size: 19px;
+	transition: .5s;
+}
+button:hover{
+	filter: brightness(1.0);
+}
+/*Text container */
+.text_container{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.text_list{
+  margin: 0;
+  padding: 0;
+}
+.text_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}
+.text_buttons {
+  display: flex;
+  gap: 8px;
+}
+/*Priority button */
+.priority {
+  padding: 6px 12px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+}
+.priority:hover {
+  background-color: #e6b800;
+}
+/*Delete button */
+.delete {
+  padding: 6px 12px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+}
+.delete:hover {
+  background-color: pink;
+}
+/*Text row */
+span{
+  width: 100%;
+  height: 100%;
+  padding-right: 20px;
+}
+/* Responsive text area */
+@media (max-width: 600px) {
+  .text_row {
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 14px;
+  }
+  
+  .text_buttons {
+      width: 100%;
+      justify-content: space-between;
+  }
+  
+  .priority, .delete {
+      width: 47%;
+      font-size: 12px;
+  }
+}
